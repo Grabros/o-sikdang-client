@@ -25,8 +25,5 @@ export const KakaoMapWrapper = styled.div`
     left: 2%;
     background-color: green;
     color: white;
-
-    h1 {
-    }
   }
 `;

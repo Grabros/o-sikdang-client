@@ -16,7 +16,6 @@ export const HeaderContainer = styled(Container)`
   justify-content: space-between;
 
   .service-logo {
-    font-weight: bold;
     letter-spacing: 0.15em;
   }
 `;
@@ -47,7 +46,7 @@ export const HeaderNavWrapper = styled.nav`
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #000;
+    background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
