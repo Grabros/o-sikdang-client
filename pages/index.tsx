@@ -5,8 +5,6 @@ import GlobalStyle from "../styles/GlobalStyle";
 
 import Layout from "../components/Reusable/Layout";
 import Search from "../components/Search/Search";
-import Introduce from "../components/Introduce/Introduce";
-import Test from "../components/Test";
 
 import { GetStaticProps } from "next";
 
@@ -17,8 +15,6 @@ function index() {
       <Layout>
         <>
           <Search />
-          <Introduce />
-          <Test />
         </>
       </Layout>
     </Fragment>
