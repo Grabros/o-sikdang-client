@@ -1,4 +1,4 @@
-import Document, { Main, NextScript, Head } from "next/document";
+import Document, { Main, NextScript, Head, Html } from "next/document";
 import Helmet from "react-helmet";
 import GlobalStyles from "../styles/GlobalStyle";
 import { ServerStyleSheet } from "styled-components";
@@ -22,7 +22,7 @@ class MyDocument extends Document {
     const htmlAttrs = htmlAttributes.toComponent();
     const bodyAttrs = bodyAttributes.toComponent();
     return (
-      <html {...htmlAttrs}>
+      <Html {...htmlAttrs}>
         <Head>
           {this.props.styleTags}
           {Object.values(helmet).map((el) => el.toComponent())}
@@ -31,7 +31,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
