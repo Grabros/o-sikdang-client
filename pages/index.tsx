@@ -4,14 +4,37 @@ import Head from "next/head";
 import GlobalStyle from "../styles/GlobalStyle";
 
 import Layout from "../components/Reusable/Layout";
+import Search from "../components/Search/Search";
+import Introduce from "../components/Introduce/Introduce";
+import Test from "../components/Test";
 
-const index = () => {
+import { GetStaticProps } from "next";
+
+function index() {
   return (
     <Fragment>
       <GlobalStyle />
-      <Layout></Layout>
+      <Layout>
+        <>
+          <Search />
+          <Introduce />
+          <Test />
+        </>
+      </Layout>
     </Fragment>
   );
-};
+}
+
+// export const getStaticProps: GetStaticProps = async (context) => {
+//   const { params, preview, previewData } = context;
+//   const res = await fetch("");
+//   const data = await res.json();
+
+//   return {
+//     props: {
+//       data: data,
+//     },
+//   };
+// };
 
 export default index;
